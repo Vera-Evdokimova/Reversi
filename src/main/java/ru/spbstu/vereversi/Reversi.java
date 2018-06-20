@@ -58,13 +58,4 @@ public class Reversi extends Application {
         }
     }
 
-    public void rules() {
-        try {
-            Parent root = FXMLLoader.load(getClass().getClassLoader().getResource("rules_window.fxml"));
-            stage.setScene(new Scene(root, 640, 480));
-        } catch (IOException e) {
-            e.printStackTrace();
-            System.exit(404);
-        }
-    }
 }
